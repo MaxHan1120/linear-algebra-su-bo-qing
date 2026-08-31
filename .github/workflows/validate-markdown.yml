@@ -1,0 +1,24 @@
+name: Validate Markdown
+
+on:
+  push:
+    paths:
+      - "**/*.md"
+      - "scripts/validate_markdown.py"
+      - ".github/workflows/validate-markdown.yml"
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "scripts/validate_markdown.py"
+      - ".github/workflows/validate-markdown.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Markdown and LaTeX conventions
+        run: python scripts/validate_markdown.py

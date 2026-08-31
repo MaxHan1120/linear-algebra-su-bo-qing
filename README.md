@@ -71,3 +71,9 @@ tags:
 ## 作業
 
 - [Linear Algebra Homework](./HW/README.md)
+
+## 編輯與驗證
+
+- 編輯前請閱讀 [GitHub-Compatible Markdown and LaTeX Guide](./CONTRIBUTING.md)。
+- 本地檢查：`python scripts/validate_markdown.py`
+- GitHub 實際渲染檢查：`python scripts/validate_markdown.py --github-render`
