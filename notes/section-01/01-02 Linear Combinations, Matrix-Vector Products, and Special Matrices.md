@@ -18,9 +18,10 @@ tags:
 
 - 沿用 [1.1 Matrices and Vectors](./01-01%20Matrices%20and%20Vectors.md)：vector 一律指 column vector，並以粗體小寫字母表示。
 - 若 $A\in\mathcal M_{m\times n}$，將其 columns 記為 $\mathbf a_1,\ldots,\mathbf a_n\in\mathbb R^m$：
-  $$
-  A=\begin{bmatrix}\mathbf a_1&\mathbf a_2&\cdots&\mathbf a_n\end{bmatrix}.
-  $$
+
+$$
+A=\begin{bmatrix}\mathbf a_1&\mathbf a_2&\cdots&\mathbf a_n\end{bmatrix}.
+$$
 
 - $\mathbf e_j\in\mathbb R^n$ 表示第 $j$ 個 standard vector。
 - $\mathbf 0_n$、$\mathbf 0_m$ 分別表示 $\mathbb R^n$、$\mathbb R^m$ 中的 zero vector。
@@ -38,10 +39,10 @@ $$
 例如，
 
 $$
-\begin{bmatrix}2\\8\end{bmatrix}
-=-3\begin{bmatrix}1\\1\end{bmatrix}
-+4\begin{bmatrix}1\\3\end{bmatrix}
-+\begin{bmatrix}1\\-1\end{bmatrix}.
+\begin{bmatrix}2\cr 8\end{bmatrix}
+=-3\begin{bmatrix}1\cr 1\end{bmatrix}
++4\begin{bmatrix}1\cr 3\end{bmatrix}
++\begin{bmatrix}1\cr -1\end{bmatrix}.
 $$
 
 已知 coefficients 時，只需進行 scalar multiplication 與 vector addition。反過來，若要判斷 $\mathbf b$ 能否寫成給定向量的線性組合，便須求解
@@ -59,17 +60,17 @@ $$
 ### Example: Unique Representation
 
 $$
-\begin{bmatrix}4\\-1\end{bmatrix}
-=x_1\begin{bmatrix}2\\3\end{bmatrix}
-+x_2\begin{bmatrix}3\\1\end{bmatrix}
+\begin{bmatrix}4\cr -1\end{bmatrix}
+=x_1\begin{bmatrix}2\cr 3\end{bmatrix}
++x_2\begin{bmatrix}3\cr 1\end{bmatrix}
 $$
 
 對應方程組有唯一解 $x_1=-1$、$x_2=2$，因此
 
 $$
-\begin{bmatrix}4\\-1\end{bmatrix}
-=-\begin{bmatrix}2\\3\end{bmatrix}
-+2\begin{bmatrix}3\\1\end{bmatrix}.
+\begin{bmatrix}4\cr -1\end{bmatrix}
+=-\begin{bmatrix}2\cr 3\end{bmatrix}
++2\begin{bmatrix}3\cr 1\end{bmatrix}.
 $$
 
 ### Geometrical Interpretation in $\mathbb R^2$
@@ -88,13 +89,13 @@ $\mathbb R^n$ 的 standard vectors 定義為
 
 $$
 \mathbf e_1=
-\begin{bmatrix}1\\0\\\vdots\\0\end{bmatrix},
+\begin{bmatrix}1\cr 0\cr \vdots\cr 0\end{bmatrix},
 \quad
 \mathbf e_2=
-\begin{bmatrix}0\\1\\\vdots\\0\end{bmatrix},
+\begin{bmatrix}0\cr 1\cr \vdots\cr 0\end{bmatrix},
 \quad\ldots\quad,
 \mathbf e_n=
-\begin{bmatrix}0\\0\\\vdots\\1\end{bmatrix}.
+\begin{bmatrix}0\cr 0\cr \vdots\cr 1\end{bmatrix}.
 $$
 
 等價地，$\mathbf e_j$ 的第 $i$ 個 component 為
@@ -102,7 +103,7 @@ $$
 $$
 (\mathbf e_j)_i=\delta_{ij}
 =\begin{cases}
-1,&i=j,\\
+1,&i=j,\cr 
 0,&i\ne j.
 \end{cases}
 $$
@@ -122,7 +123,7 @@ A=\begin{bmatrix}\mathbf a_1&\cdots&\mathbf a_n\end{bmatrix}
 \in\mathcal M_{m\times n},
 \qquad
 \mathbf v=
-\begin{bmatrix}v_1\\\vdots\\v_n\end{bmatrix}
+\begin{bmatrix}v_1\cr \vdots\cr v_n\end{bmatrix}
 \in\mathbb R^n.
 $$
 
@@ -144,9 +145,9 @@ $$
 $$
 A\mathbf v=
 \begin{bmatrix}
-\sum_{j=1}^n a_{1j}v_j\\
-\sum_{j=1}^n a_{2j}v_j\\
-\vdots\\
+\sum_{j=1}^n a_{1j}v_j\cr 
+\sum_{j=1}^n a_{2j}v_j\cr 
+\vdots\cr 
 \sum_{j=1}^n a_{mj}v_j
 \end{bmatrix}.
 $$
@@ -163,18 +164,18 @@ $$
 令
 
 $$
-A=\begin{bmatrix}1&2\\3&4\\5&6\end{bmatrix},
+A=\begin{bmatrix}1&2\cr 3&4\cr 5&6\end{bmatrix},
 \qquad
-\mathbf v=\begin{bmatrix}7\\8\end{bmatrix}.
+\mathbf v=\begin{bmatrix}7\cr 8\end{bmatrix}.
 $$
 
 則
 
 $$
 A\mathbf v
-=7\begin{bmatrix}1\\3\\5\end{bmatrix}
-+8\begin{bmatrix}2\\4\\6\end{bmatrix}
-=\begin{bmatrix}23\\53\\83\end{bmatrix}.
+=7\begin{bmatrix}1\cr 3\cr 5\end{bmatrix}
++8\begin{bmatrix}2\cr 4\cr 6\end{bmatrix}
+=\begin{bmatrix}23\cr 53\cr 83\end{bmatrix}.
 $$
 
 ## Special Matrices
@@ -186,9 +187,9 @@ $$
 $$
 I_n=
 \begin{bmatrix}
-1&0&\cdots&0\\
-0&1&\cdots&0\\
-\vdots&\vdots&\ddots&\vdots\\
+1&0&\cdots&0\cr 
+0&1&\cdots&0\cr 
+\vdots&\vdots&\ddots&\vdots\cr 
 0&0&\cdots&1
 \end{bmatrix}
 =\begin{bmatrix}\mathbf e_1&\mathbf e_2&\cdots&\mathbf e_n\end{bmatrix}.
@@ -219,7 +220,7 @@ $$
 
 $$
 A=\begin{bmatrix}
-0.85&0.03\\
+0.85&0.03\cr 
 0.15&0.97
 \end{bmatrix}
 $$
@@ -227,7 +228,7 @@ $$
 是 stochastic matrix。若
 
 $$
-\mathbf p=\begin{bmatrix}500\\700\end{bmatrix}
+\mathbf p=\begin{bmatrix}500\cr 700\end{bmatrix}
 $$
 
 表示目前 city 與 suburbs 的人口（千人），則下一期人口分布為
@@ -235,10 +236,10 @@ $$
 $$
 A\mathbf p
 =\begin{bmatrix}
-0.85(500)+0.03(700)\\
+0.85(500)+0.03(700)\cr 
 0.15(500)+0.97(700)
 \end{bmatrix}
-=\begin{bmatrix}446\\754\end{bmatrix}.
+=\begin{bmatrix}446\cr 754\end{bmatrix}.
 $$
 
 再下一期則為 $A(A\mathbf p)$。
@@ -250,7 +251,7 @@ $$
 $$
 A_\theta=
 \begin{bmatrix}
-\cos\theta&-\sin\theta\\
+\cos\theta&-\sin\theta\cr 
 \sin\theta&\cos\theta
 \end{bmatrix}.
 $$
@@ -260,28 +261,27 @@ $$
 $$
 A_\theta\mathbf p
 =\begin{bmatrix}
-x\cos\theta-y\sin\theta\\
+x\cos\theta-y\sin\theta\cr 
 x\sin\theta+y\cos\theta
 \end{bmatrix}.
 $$
 
 ![Rotation matrix geometric interpretation](./_attachments/01-02%20Linear%20Combinations,%20Matrix-Vector%20Products,%20and%20Special%20Matrices_image/Pasted%20image%2020260831161500.png)
 $A_\theta$ 的 columns 是標準基底旋轉 $\theta$ 後的向量 $\mathbf w_1,\mathbf w_2$。因此，旋轉後的向量 $\mathbf p'=A_\theta\mathbf p$ 可寫成 $\mathbf p'=x\mathbf w_1+y\mathbf w_2$。
+
 $$
-A_{\theta}\mathbf{p}
-=
-x
-\begin{bmatrix}
-\cos\theta \\
+\begin{aligned}
+A_{\theta}\mathbf p
+&=x\begin{bmatrix}
+\cos\theta\cr
 \sin\theta
 \end{bmatrix}
-+
-y
-\begin{bmatrix}
--\sin\theta \\
++y\begin{bmatrix}
+-\sin\theta\cr
 \cos\theta
-\end{bmatrix}
-=x\ \mathbf{w_{1}}+y\ \mathbf{w_{2}}
+\end{bmatrix}\cr
+&=x\mathbf w_1+y\mathbf w_2.
+\end{aligned}
 $$
 
 
@@ -292,9 +292,9 @@ $$
 
 $$
 \begin{aligned}
-A(\mathbf u+\mathbf v)&=A\mathbf u+A\mathbf v,\\
-A(c\mathbf u)&=c(A\mathbf u)=(cA)\mathbf u,\\
-(A+B)\mathbf u&=A\mathbf u+B\mathbf u,\\
+A(\mathbf u+\mathbf v)&=A\mathbf u+A\mathbf v,\cr 
+A(c\mathbf u)&=c(A\mathbf u)=(cA)\mathbf u,\cr 
+(A+B)\mathbf u&=A\mathbf u+B\mathbf u,\cr 
 A\mathbf e_j&=\mathbf a_j,\qquad j=1,\ldots,n.
 \end{aligned}
 $$
@@ -306,9 +306,9 @@ $$
 $$
 \begin{aligned}
 B\mathbf w=A\mathbf w\ \text{for all }\mathbf w\in\mathbb R^n
-&\implies B=A,\\
-A\mathbf 0_n&=\mathbf 0_m,\\
-O_{m\times n}\mathbf v&=\mathbf 0_m,\\
+&\implies B=A,\cr 
+A\mathbf 0_n&=\mathbf 0_m,\cr 
+O_{m\times n}\mathbf v&=\mathbf 0_m,\cr 
 I_n\mathbf v&=\mathbf v.
 \end{aligned}
 $$

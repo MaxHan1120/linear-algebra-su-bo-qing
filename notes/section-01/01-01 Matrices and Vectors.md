@@ -21,16 +21,16 @@ tags:
 - 矩陣以大寫字母 $A,B,C$ 表示；向量以粗體小寫字母 $\mathbf u,\mathbf v$ 表示；scalar 以小寫字母 $s,t$ 表示。
 - 若 $A\in\mathcal M_{m\times n}$，則
 
-  $$
-  A=[a_{ij}]_{m\times n}
-  =\begin{bmatrix}
-  a_{11}&\cdots&a_{1n}\\
-  \vdots&\ddots&\vdots\\
-  a_{m1}&\cdots&a_{mn}
-  \end{bmatrix},
-  $$
+$$
+A=[a_{ij}]_{m\times n}
+=\begin{bmatrix}
+a_{11}&\cdots&a_{1n}\cr
+\vdots&\ddots&\vdots\cr
+a_{m1}&\cdots&a_{mn}
+\end{bmatrix},
+$$
 
-  其中 $a_{ij}$ 是第 $i$ 列、第 $j$ 行的元素（$(i,j)$-entry）。本文採「列 = row、行 = column」。
+其中 $a_{ij}$ 是第 $i$ 列、第 $j$ 行的元素（$(i,j)$-entry）。本文採「列 = row、行 = column」。
 
 ## Matrix
 
@@ -57,10 +57,11 @@ $$
 例如，刪除 $B$ 的第一列可得 $E$：
 
 $$
-B=\begin{bmatrix}6&8\\15&20\\45&64\end{bmatrix},
+B=\begin{bmatrix}6&8\cr 15&20\cr 45&64\end{bmatrix},
 \qquad
-E=\begin{bmatrix}15&20\\45&64\end{bmatrix}.
+E=\begin{bmatrix}15&20\cr 45&64\end{bmatrix}.
 $$
+
 故 $E$ 是 $B$ 的子矩陣。
 ## Entrywise Operations
 
@@ -106,12 +107,12 @@ $$
 
 $$
 \begin{aligned}
-A+B&=B+A,\\
-(A+B)+C&=A+(B+C),\\
-A+O&=A,\\
-A+(-A)&=O,\\
-(st)A&=s(tA),\\
-s(A+B)&=sA+sB,\\
+A+B&=B+A,\cr 
+(A+B)+C&=A+(B+C),\cr 
+A+O&=A,\cr 
+A+(-A)&=O,\cr 
+(st)A&=s(tA),\cr 
+s(A+B)&=sA+sB,\cr 
 (s+t)A&=sA+tA.
 \end{aligned}
 $$
@@ -130,8 +131,8 @@ $$
 
 $$
 \begin{aligned}
-(A+B)^T&=A^T+B^T,\\
-(sA)^T&=sA^T,\\
+(A+B)^T&=A^T+B^T,\cr 
+(sA)^T&=sA^T,\cr 
 (A^T)^T&=A.
 \end{aligned}
 $$
@@ -155,7 +156,7 @@ $$
 $$
 \mathbf v=
 \begin{bmatrix}
-v_1\\v_2\\\vdots\\v_n
+v_1\cr v_2\cr \vdots\cr v_n
 \end{bmatrix},
 $$
 
@@ -176,7 +177,7 @@ C=\begin{bmatrix}\mathbf c_1&\cdots&\mathbf c_j&\cdots&\mathbf c_n\end{bmatrix},
 \qquad
 \mathbf c_j=
 \begin{bmatrix}
-c_{1j}\\c_{2j}\\\vdots\\c_{mj}
+c_{1j}\cr c_{2j}\cr \vdots\cr c_{mj}
 \end{bmatrix}
 \in\mathbb R^m.
 $$
