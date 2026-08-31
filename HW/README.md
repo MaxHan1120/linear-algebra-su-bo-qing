@@ -13,12 +13,12 @@ tags:
 
 ### Section 01
 
-- [[Problem/section-01/linear-algebra-homework-section-1.1.pdf|Section 1.1 Problems]]
-- [[Problem/section-01/linear-algebra-homework-section-1.2.pdf|Section 1.2 Problems]]
-- [[Problem/section-01/linear-algebra-homework-section-1.3.pdf|Section 1.3 Problems]]
-- [[Problem/section-01/linear-algebra-homework-section-1.4.pdf|Section 1.4 Problems]]
-- [[Problem/section-01/linear-algebra-homework-section-1.6.pdf|Section 1.6 Problems]]
-- [[Problem/section-01/linear-algebra-homework-section-1.7.pdf|Section 1.7 Problems]]
+- [Section 1.1 Problems](./Problem/section-01/linear-algebra-homework-section-1.1.pdf)
+- [Section 1.2 Problems](./Problem/section-01/linear-algebra-homework-section-1.2.pdf)
+- [Section 1.3 Problems](./Problem/section-01/linear-algebra-homework-section-1.3.pdf)
+- [Section 1.4 Problems](./Problem/section-01/linear-algebra-homework-section-1.4.pdf)
+- [Section 1.6 Problems](./Problem/section-01/linear-algebra-homework-section-1.6.pdf)
+- [Section 1.7 Problems](./Problem/section-01/linear-algebra-homework-section-1.7.pdf)
 
 ## Solution
 

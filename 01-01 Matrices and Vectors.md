@@ -10,7 +10,8 @@ tags:
 
 # 1.1 Matrices and Vectors
 
-> [!info] 講義範圍
+> **講義範圍**
+>
 > `1_講義_Basic Concepts on Matrices and Vectors(1)(2)`，PDF 第 1–19 頁。
 
 ## Notation
@@ -198,5 +199,5 @@ $$
 
 ## Navigation
 
-- 上層：[[README|線性代數－蘇柏青]]
-- 下一節：[[01-02 Linear Combinations, Matrix-Vector Products, and Special Matrices|1.2 Linear Combinations, Matrix-Vector Products, and Special Matrices]]
+- 上層：[線性代數－蘇柏青](./README.md)
+- 下一節：[1.2 Linear Combinations, Matrix-Vector Products, and Special Matrices](./01-02%20Linear%20Combinations,%20Matrix-Vector%20Products,%20and%20Special%20Matrices.md)

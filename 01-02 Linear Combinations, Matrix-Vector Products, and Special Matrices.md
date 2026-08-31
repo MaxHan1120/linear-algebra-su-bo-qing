@@ -10,12 +10,13 @@ tags:
 
 # 1.2 Linear Combinations, Matrix-Vector Products, and Special Matrices
 
-> [!info] 講義範圍
+> **講義範圍**
+>
 > `1_講義_Basic Concepts on Matrices and Vectors(1)(2)`，PDF 第 20–33 頁。
 
 ## Notation
 
-- 沿用 [[01-01 Matrices and Vectors|1.1 Matrices and Vectors]]：vector 一律指 column vector，並以粗體小寫字母表示。
+- 沿用 [1.1 Matrices and Vectors](./01-01%20Matrices%20and%20Vectors.md)：vector 一律指 column vector，並以粗體小寫字母表示。
 - 若 $A\in\mathcal M_{m\times n}$，將其 columns 記為 $\mathbf a_1,\ldots,\mathbf a_n\in\mathbb R^m$：
   $$
   A=\begin{bmatrix}\mathbf a_1&\mathbf a_2&\cdots&\mathbf a_n\end{bmatrix}.
@@ -264,7 +265,7 @@ x\sin\theta+y\cos\theta
 \end{bmatrix}.
 $$
 
-![[Pasted image 20260831161500.png|center|]]
+![Rotation matrix geometric interpretation](./_attachments/01-02%20Linear%20Combinations,%20Matrix-Vector%20Products,%20and%20Special%20Matrices_image/Pasted%20image%2020260831161500.png)
 $A_\theta$ 的 columns 是標準基底旋轉 $\theta$ 後的向量 $\mathbf w_1,\mathbf w_2$。因此，旋轉後的向量 $\mathbf p'=A_\theta\mathbf p$ 可寫成 $\mathbf p'=x\mathbf w_1+y\mathbf w_2$。
 $$
 A_{\theta}\mathbf{p}
@@ -328,6 +329,6 @@ $$
 
 ## Navigation
 
-- 上一節：[[01-01 Matrices and Vectors|1.1 Matrices and Vectors]]
-- 上層：[[README|線性代數－蘇柏青]]
-- 下一節：[[01-03 Systems of Linear Equations|1.3 Systems of Linear Equations]]
+- 上一節：[1.1 Matrices and Vectors](./01-01%20Matrices%20and%20Vectors.md)
+- 上層：[線性代數－蘇柏青](./README.md)
+- 下一節：[1.3 Systems of Linear Equations](./01-03%20Systems%20of%20Linear%20Equations.md)
