@@ -103,7 +103,7 @@ $$
 $$
 (\mathbf e_j)_i=\delta_{ij}
 =\begin{cases}
-1,&i=j,\cr 
+1,&i=j,\cr
 0,&i\ne j.
 \end{cases}
 $$
@@ -145,9 +145,9 @@ $$
 $$
 A\mathbf v=
 \begin{bmatrix}
-\sum_{j=1}^n a_{1j}v_j\cr 
-\sum_{j=1}^n a_{2j}v_j\cr 
-\vdots\cr 
+\sum_{j=1}^n a_{1j}v_j\cr
+\sum_{j=1}^n a_{2j}v_j\cr
+\vdots\cr
 \sum_{j=1}^n a_{mj}v_j
 \end{bmatrix}.
 $$
@@ -187,9 +187,9 @@ $$
 $$
 I_n=
 \begin{bmatrix}
-1&0&\cdots&0\cr 
-0&1&\cdots&0\cr 
-\vdots&\vdots&\ddots&\vdots\cr 
+1&0&\cdots&0\cr
+0&1&\cdots&0\cr
+\vdots&\vdots&\ddots&\vdots\cr
 0&0&\cdots&1
 \end{bmatrix}
 =\begin{bmatrix}\mathbf e_1&\mathbf e_2&\cdots&\mathbf e_n\end{bmatrix}.
@@ -220,7 +220,7 @@ $$
 
 $$
 A=\begin{bmatrix}
-0.85&0.03\cr 
+0.85&0.03\cr
 0.15&0.97
 \end{bmatrix}
 $$
@@ -236,7 +236,7 @@ $$
 $$
 A\mathbf p
 =\begin{bmatrix}
-0.85(500)+0.03(700)\cr 
+0.85(500)+0.03(700)\cr
 0.15(500)+0.97(700)
 \end{bmatrix}
 =\begin{bmatrix}446\cr 754\end{bmatrix}.
@@ -251,7 +251,7 @@ $$
 $$
 A_\theta=
 \begin{bmatrix}
-\cos\theta&-\sin\theta\cr 
+\cos\theta&-\sin\theta\cr
 \sin\theta&\cos\theta
 \end{bmatrix}.
 $$
@@ -261,7 +261,7 @@ $$
 $$
 A_\theta\mathbf p
 =\begin{bmatrix}
-x\cos\theta-y\sin\theta\cr 
+x\cos\theta-y\sin\theta\cr
 x\sin\theta+y\cos\theta
 \end{bmatrix}.
 $$
@@ -292,9 +292,9 @@ $$
 
 $$
 \begin{aligned}
-A(\mathbf u+\mathbf v)&=A\mathbf u+A\mathbf v,\cr 
-A(c\mathbf u)&=c(A\mathbf u)=(cA)\mathbf u,\cr 
-(A+B)\mathbf u&=A\mathbf u+B\mathbf u,\cr 
+A(\mathbf u+\mathbf v)&=A\mathbf u+A\mathbf v,\cr
+A(c\mathbf u)&=c(A\mathbf u)=(cA)\mathbf u,\cr
+(A+B)\mathbf u&=A\mathbf u+B\mathbf u,\cr
 A\mathbf e_j&=\mathbf a_j,\qquad j=1,\ldots,n.
 \end{aligned}
 $$
@@ -306,9 +306,9 @@ $$
 $$
 \begin{aligned}
 B\mathbf w=A\mathbf w\ \text{for all }\mathbf w\in\mathbb R^n
-&\implies B=A,\cr 
-A\mathbf 0_n&=\mathbf 0_m,\cr 
-O_{m\times n}\mathbf v&=\mathbf 0_m,\cr 
+&\implies B=A,\cr
+A\mathbf 0_n&=\mathbf 0_m,\cr
+O_{m\times n}\mathbf v&=\mathbf 0_m,\cr
 I_n\mathbf v&=\mathbf v.
 \end{aligned}
 $$

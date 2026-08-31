@@ -107,12 +107,12 @@ $$
 
 $$
 \begin{aligned}
-A+B&=B+A,\cr 
-(A+B)+C&=A+(B+C),\cr 
-A+O&=A,\cr 
-A+(-A)&=O,\cr 
-(st)A&=s(tA),\cr 
-s(A+B)&=sA+sB,\cr 
+A+B&=B+A,\cr
+(A+B)+C&=A+(B+C),\cr
+A+O&=A,\cr
+A+(-A)&=O,\cr
+(st)A&=s(tA),\cr
+s(A+B)&=sA+sB,\cr
 (s+t)A&=sA+tA.
 \end{aligned}
 $$
@@ -131,8 +131,8 @@ $$
 
 $$
 \begin{aligned}
-(A+B)^T&=A^T+B^T,\cr 
-(sA)^T&=sA^T,\cr 
+(A+B)^T&=A^T+B^T,\cr
+(sA)^T&=sA^T,\cr
 (A^T)^T&=A.
 \end{aligned}
 $$
