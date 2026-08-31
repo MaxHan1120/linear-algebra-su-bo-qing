@@ -24,7 +24,7 @@ A=\begin{bmatrix}\mathbf a_1&\mathbf a_2&\cdots&\mathbf a_n\end{bmatrix}.
 $$
 
 - $\mathbf e_j\in\mathbb R^n$ 表示第 $j$ 個 standard vector。
-- $\mathbf 0_n$、$\mathbf 0_m$ 分別表示 $\mathbb R^n$、$\mathbb R^m$ 中的 zero vector。
+- $\mathbf 0_n$、 $\mathbf 0_m$ 分別表示 $\mathbb R^n$、 $\mathbb R^m$ 中的 zero vector。
 
 ## Linear Combination
 
@@ -53,9 +53,9 @@ $$
 
 此問題等價於一組 linear equations，可能有以下三種結果：
 
-- 唯一解：$\mathbf b$ 有唯一一種線性組合表示。
-- 無限多解：$\mathbf b$ 有多種線性組合表示。
-- 無解：$\mathbf b$ 不是這些向量的線性組合。
+- 唯一解： $\mathbf b$ 有唯一一種線性組合表示。
+- 無限多解： $\mathbf b$ 有多種線性組合表示。
+- 無解： $\mathbf b$ 不是這些向量的線性組合。
 
 ### Example: Unique Representation
 
@@ -65,7 +65,7 @@ $$
 +x_2\begin{bmatrix}3\cr 1\end{bmatrix}
 $$
 
-對應方程組有唯一解 $x_1=-1$、$x_2=2$，因此
+對應方程組有唯一解 $x_1=-1$、 $x_2=2$，因此
 
 $$
 \begin{bmatrix}4\cr -1\end{bmatrix}
@@ -81,7 +81,7 @@ $$
 \mathbf w=a\mathbf u+b\mathbf v.
 $$
 
-幾何上，$a\mathbf u$ 與 $b\mathbf v$ 構成以 $\mathbf w$ 為對角線的平行四邊形。若 $\mathbf u$ 與 $\mathbf v$ 平行，則它們只能產生同一直線上的向量；此時表示可能不存在，也可能不唯一。
+幾何上， $a\mathbf u$ 與 $b\mathbf v$ 構成以 $\mathbf w$ 為對角線的平行四邊形。若 $\mathbf u$ 與 $\mathbf v$ 平行，則它們只能產生同一直線上的向量；此時表示可能不存在，也可能不唯一。
 
 ## Standard Vectors
 
@@ -98,7 +98,7 @@ $$
 \begin{bmatrix}0\cr 0\cr \vdots\cr 1\end{bmatrix}.
 $$
 
-等價地，$\mathbf e_j$ 的第 $i$ 個 component 為
+等價地， $\mathbf e_j$ 的第 $i$ 個 component 為
 
 $$
 (\mathbf e_j)_i=\delta_{ij}
@@ -136,7 +136,7 @@ v_1\mathbf a_1+v_2\mathbf a_2+\cdots+v_n\mathbf a_n
 \in\mathbb R^m.
 $$
 
-因此，$A\mathbf v$ 有定義的必要條件是 $A$ 的 column 數等於 $\mathbf v$ 的 component 數。
+因此， $A\mathbf v$ 有定義的必要條件是 $A$ 的 column 數等於 $\mathbf v$ 的 component 數。
 
 ### Entrywise Formula
 
@@ -152,7 +152,7 @@ A\mathbf v=
 \end{bmatrix}.
 $$
 
-換言之，$A\mathbf v$ 的第 $i$ 個 component 是 $A$ 的第 $i$ 列與 $\mathbf v$ 的逐項乘積和：
+換言之， $A\mathbf v$ 的第 $i$ 個 component 是 $A$ 的第 $i$ 列與 $\mathbf v$ 的逐項乘積和：
 
 $$
 (A\mathbf v)_i=\sum_{j=1}^n a_{ij}v_j,
@@ -182,7 +182,7 @@ $$
 
 ### Identity Matrix
 
-對每個正整數 $n$，$n\times n$ identity matrix 定義為
+對每個正整數 $n$， $n\times n$ identity matrix 定義為
 
 $$
 I_n=
@@ -288,7 +288,7 @@ $$
 
 ## Properties of Matrix-Vector Products
 
-令 $A,B\in\mathcal M_{m\times n}$、$\mathbf u,\mathbf v,\mathbf w\in\mathbb R^n$，且 $c\in\mathbb R$。則：
+令 $A,B\in\mathcal M_{m\times n}$、 $\mathbf u,\mathbf v,\mathbf w\in\mathbb R^n$，且 $c\in\mathbb R$。則：
 
 $$
 \begin{aligned}

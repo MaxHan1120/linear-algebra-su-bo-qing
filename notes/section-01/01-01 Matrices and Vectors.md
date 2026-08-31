@@ -30,11 +30,11 @@ a_{m1}&\cdots&a_{mn}
 \end{bmatrix},
 $$
 
-其中 $a_{ij}$ 是第 $i$ 列、第 $j$ 行的元素（$(i,j)$-entry）。本文採「列 = row、行 = column」。
+其中 $a_{ij}$ 是第 $i$ 列、第 $j$ 行的元素（ $(i,j)$-entry）。本文採「列 = row、行 = column」。
 
 ## Matrix
 
-矩陣（matrix）是由 scalars 排成的矩形陣列。具有 $m$ 列、$n$ 行的矩陣，其 size 為 $m\times n$；若 $m=n$，則稱為方陣（square matrix）。
+矩陣（matrix）是由 scalars 排成的矩形陣列。具有 $m$ 列、 $n$ 行的矩陣，其 size 為 $m\times n$；若 $m=n$，則稱為方陣（square matrix）。
 
 ### Equality
 
@@ -121,7 +121,7 @@ $$
 
 ## Transpose
 
-若 $A\in\mathcal M_{m\times n}$，其轉置（transpose）$A^T\in\mathcal M_{n\times m}$ 定義為
+若 $A\in\mathcal M_{m\times n}$，其轉置（transpose） $A^T\in\mathcal M_{n\times m}$ 定義為
 
 $$
 (A^T)_{ij}=a_{ji}.
@@ -196,7 +196,7 @@ $$
 - 矩陣由 size 與 entries 描述；矩陣相等必須尺寸與所有對應元素皆相同。
 - 加法、減法與 scalar multiplication 均逐項進行，其中加減法要求矩陣尺寸相同。
 - 轉置會交換列與行，因此將 $m\times n$ 矩陣變為 $n\times m$ 矩陣。
-- 本課程預設向量為 column vector，$\mathbb R^n=\mathcal M_{n\times1}(\mathbb R)$。
+- 本課程預設向量為 column vector， $\mathbb R^n=\mathcal M_{n\times1}(\mathbb R)$。
 
 ## Navigation
 
