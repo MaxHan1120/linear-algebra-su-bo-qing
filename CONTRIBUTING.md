@@ -26,6 +26,7 @@
 2. 不要把 display math 縮排在 Markdown list 內；應將公式退出 list indentation。
 3. 矩陣、`aligned`、`cases` 等環境的換列使用 `\cr`，不要使用 `\\`。GitHub Markdown 會在數學渲染前處理雙反斜線，使 `\\` 變成錯誤的單反斜線。
 4. display math 內不要出現只有 `=` 或 `-` 的實體行，否則可能被 GFM 誤判為 Setext heading。
+5. GitHub 會拒絕 `\operatorname` macro；矩陣運算名稱統一使用 `\mathrm{rref}`、`\mathrm{rank}`、`\mathrm{nullity}`。
 
 建議：
 

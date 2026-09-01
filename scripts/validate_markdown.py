@@ -24,6 +24,7 @@ RAW_INLINE_MATH_RE = re.compile(r"(?<!\$)\$(?!\$)[^$<\r\n]*?\$(?!\$)")
 RAW_DISPLAY_MATH_RE = re.compile(
     r"<p>\s*\$\$|\$\$\s*<br>|<h[1-6]>\s*\$\$", re.IGNORECASE
 )
+FORBIDDEN_MATH_MACRO_RE = re.compile(r"\\operatorname\b")
 
 
 @dataclass
@@ -93,6 +94,13 @@ def check_file(path: Path, repository_root: Path, errors: list[str]) -> FileMath
 
         if in_fence:
             continue
+
+        macro_scan_line = strip_inline_code(original_line)
+        if FORBIDDEN_MATH_MACRO_RE.search(macro_scan_line):
+            errors.append(
+                f"{path.relative_to(repository_root)}:{line_number}: "
+                r"GitHub disallows \operatorname; use \mathrm{...} instead"
+            )
 
         if stripped == "$$":
             if original_line != "$$":

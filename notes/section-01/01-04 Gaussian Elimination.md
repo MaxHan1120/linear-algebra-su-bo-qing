@@ -90,7 +90,7 @@ $$
 再進行 backward pass，得到唯一的 RREF：
 
 $$
-\operatorname{rref}[A\mid\mathbf b]=
+\mathrm{rref}[A\mid\mathbf b]=
 \left[
 \begin{array}{ccc|c}
 1&0&0&-4\cr
@@ -113,33 +113,33 @@ $$
 
 令 $A\in\mathcal M_{m\times n}$，並令 $R$ 為 $A$ 的 RREF。
 
-- **Rank**： $A$ 的 rank（秩）定義為 $R$ 的非零列數，記為 $\operatorname{rank}(A)$。
+- **Rank**： $A$ 的 rank（秩）定義為 $R$ 的非零列數，記為 $\mathrm{rank}(A)$。
 - **Nullity**： $A$ 的 nullity（零度）定義為
 
 $$
-\operatorname{nullity}(A)=n-\operatorname{rank}(A).
+\mathrm{nullity}(A)=n-\mathrm{rank}(A).
 $$
 
-其中 $n$ 是 $A$ 的行數（column 數）。由 RREF 的結構， $\operatorname{rank}(A)$ 等於 pivot 的數目，也等於 basic variables 的數目； $\operatorname{nullity}(A)$ 等於 free variables 的數目。
+其中 $n$ 是 $A$ 的行數（column 數）。由 RREF 的結構， $\mathrm{rank}(A)$ 等於 pivot 的數目，也等於 basic variables 的數目； $\mathrm{nullity}(A)$ 等於 free variables 的數目。
 
 若 $A\mathbf x=\mathbf b$ 為 consistent system，則
 
 $$
 \begin{aligned}
-\text{basic variables 的數目}&=\operatorname{rank}(A),\cr
-\text{free variables 的數目}&=\operatorname{nullity}(A).
+\text{basic variables 的數目}&=\mathrm{rank}(A),\cr
+\text{free variables 的數目}&=\mathrm{nullity}(A).
 \end{aligned}
 $$
 
 若 $[A\mid\mathbf b]$ 的 RREF 為 $[R\mid\mathbf c]$，則 $R$ 也是 $A$ 的 RREF，因此
 
 $$
-\operatorname{rank}(A)=\operatorname{rank}(R),
+\mathrm{rank}(A)=\mathrm{rank}(R),
 \qquad
-\operatorname{nullity}(A)=\operatorname{nullity}(R).
+\mathrm{nullity}(A)=\mathrm{nullity}(R).
 $$
 
-但 $\operatorname{rank}([A\mid\mathbf b])$ 不一定等於 $\operatorname{rank}(A)$；兩者的關係正是 consistency test 的內容。
+但 $\mathrm{rank}([A\mid\mathbf b])$ 不一定等於 $\mathrm{rank}(A)$；兩者的關係正是 consistency test 的內容。
 
 ## Test of Consistency
 
@@ -163,7 +163,7 @@ $$
 4. 係數矩陣與增廣矩陣的 rank 相同：
 
 $$
-\operatorname{rank}(A)=\operatorname{rank}([A\mid\mathbf b]).
+\mathrm{rank}(A)=\mathrm{rank}([A\mid\mathbf b]).
 $$
 
 條件 3 的矛盾列代表 $0=d$，因此直接表示無解。條件 2 則說明 $\mathbf b$ 是否位於 $A$ 的 column space；若位於其中，便存在某個 $\mathbf x$ 使 $A\mathbf x=\mathbf b$。
@@ -189,7 +189,7 @@ $$
 - Gaussian elimination 的 Steps 1-4 是 forward pass，將矩陣化為 REF；Steps 5-6 是 backward pass，將 REF 化為 RREF。
 - 每一步只使用可逆的初等列運算，因此不改變增廣矩陣所代表的解集合。
 - RREF 的 pivot 數目等於 rank；行數減去 rank 等於 nullity，也就是 free variables 的數目。
-- $A\mathbf x=\mathbf b$ consistent 當且僅當 $\mathbf b$ 是 $A$ 的 columns 的線性組合，等價於 $\operatorname{rank}(A)=\operatorname{rank}([A\mid\mathbf b])$。
+- $A\mathbf x=\mathbf b$ consistent 當且僅當 $\mathbf b$ 是 $A$ 的 columns 的線性組合，等價於 $\mathrm{rank}(A)=\mathrm{rank}([A\mid\mathbf b])$。
 - RREF 中的矛盾列 $[0\ \cdots\ 0\mid d]$（ $d\ne0$）是無解的判準。
 
 ## Practice
