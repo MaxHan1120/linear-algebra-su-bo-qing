@@ -146,7 +146,7 @@ $$
 令 $A\in\mathcal M_{m\times n}$、 $\mathbf b\in\mathbb R^m$。以下四個條件彼此等價：
 
 1. $A\mathbf x=\mathbf b$ 是 consistent。
-2. $\mathbf b$ 可寫成 $A$ 的 columns 的線性組合。若 $A=[\mathbf a_1\ \cdots\ \mathbf a_n]$，則存在 $v_1,ldots,v_n\in\mathbb R$ 使
+2. $\mathbf b$ 可寫成 $A$ 的 columns 的線性組合。若 $A=[\mathbf a_1\ \cdots\ \mathbf a_n]$，則存在 $v_1,\cdots,v_n\in\mathbb R$ 使
 
 $$
 \mathbf b=v_1\mathbf a_1+\cdots+v_n\mathbf a_n.
